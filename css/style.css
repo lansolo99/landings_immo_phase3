@@ -994,7 +994,7 @@ header{
   }
 
   .segment.avantages .contenu{
-    margin: 40px 15px;
+    margin: 40px 10px;
   }
 
   .logosgfooter{
@@ -1021,8 +1021,11 @@ header{
   }
 
   .segment.avantages .row .columns{
-    min-height: 250px;
+    min-height: 230px;
   }
 
+.segment.expertise .row .column p{
+  height: 75px;
+}
 
 }
