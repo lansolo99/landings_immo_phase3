@@ -678,7 +678,7 @@ header{
   padding-right: 36px;
 }
 
-.segment.expertise .row .column:last-child{
+.segment.expertise .row .column.agence{
   border: none;
 }
 
