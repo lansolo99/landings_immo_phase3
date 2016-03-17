@@ -516,7 +516,7 @@ body {
 	clear:both;
   margin: auto;
   width: 1000px;
-  min-width: 768px;
+  min-width: 738px;
 }
 
 .wrapper.header, .wrapper.avantages{
@@ -1021,7 +1021,7 @@ header{
   }
 
   .segment.avantages .row .columns{
-    min-height: 230px;
+    min-height: 250px;
   }
 
 .segment.expertise .row .column p{
