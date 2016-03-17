@@ -566,18 +566,72 @@ header{
   text-align: center;
   background: url('../images/main_image_full.jpg');
   background-size: cover;
-  padding: 67px 0;
+  padding: 109px 0;
 }
 
 #offre{
   display: inline-block;
   position: relative;
-  left: 100px;
-  background: #374;
-  width: auto;;
+  margin:auto;
+  width: 180px;
+  height:180px;
+}
+
+#offre #promo{
+  background: #347992;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+}
+
+#offre #promo .contenu{
+  display: block;
+  position: relative;
+  top:23px;
+}
+
+#offre #promo h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+#offre #promo h3 span{
+  font-size: 28px;
+
+}
+
+#offre #promo h3 sup{
+  font-size: 20px;
+}
+
+#offre #promo .conditions{
+  display: block;
+  position: relative;
+  top: 9px;
+  color: #c1edff;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+#offre #promo .conditions span{
+  font-size: 14px;
+  font-weight: 500;
 }
 
 #offre .titre{
+  position: absolute;
+  top: -40px;
+  left: 160px;
+  width: 410px;
+  height: auto;
+
   padding: 30px;
   background: #fff;
 }
@@ -601,53 +655,7 @@ header{
   font-size: 20px;
 }
 
-#promo{
-  background: #347992;
-  position: absolute;
-  top: 30px;
-  left: -165px;
-  width: 180px;
-  height: 180px;
-  border-radius: 90px;
-  border: 3px solid #ffffff;
-  color: #ffffff;
-}
 
-#promo .contenu{
-  display: block;
-  position: relative;
-  top:23px;
-}
-
-#promo h3{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 32px;
-  line-height: 35px;
-  font-weight: 700;
-}
-
-#promo h3 span{
-  font-size: 28px;
-
-}
-
-#promo h3 sup{
-  font-size: 20px;
-}
-
-#promo .conditions{
-  display: block;
-  position: relative;
-  top: 9px;
-  color: #c1edff;
-  font-size: 12px;
-  line-height: 17px;
-}
-
-#promo .conditions span{
-  font-size: 14px;
-  font-weight: 500;
-}
 
 
 /* Expertise */
@@ -667,18 +675,27 @@ header{
   text-transform: uppercase;
 }
 
+.segment.expertise .row .one-third.column{
+  width: 33.333%;
+  margin-left: 0;
+}
+
 .segment.expertise .row .column{
   margin-top: 40px;
   border-right: 1px solid #999999;
   text-align: left;
-  /* background: #856; */
 }
 
-.segment.expertise .row .pad{
+
+.segment.expertise .row .column.online{
   padding-right: 36px;
 }
-
+.segment.expertise .row .column.telephone{
+  padding-left: 36px;
+  padding-right: 36px;
+}
 .segment.expertise .row .column.agence{
+  padding-left: 36px;
   border: none;
 }
 
@@ -755,13 +772,17 @@ header{
   top:2px;
 }
 
+.segment.expertise .row .column.agence .button{
+  width: 230px;
+}
+
 
 .segment.expertise .row .column .button span i.icon-arrow:before{
   content:'';
   display: block;
   position: absolute;
   top: 3px;
-  right: -30px;
+  right: -20px;
   width: 12px;
   height: 12px;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGNzdGMTE3NDA3MjA2ODExOURCM0JFODVBOUJENENGQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCQjQwNUU4ODk2MEMxMUU1OUQwNkREODUzNThDOTJCRiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCQjQwNUU4Nzk2MEMxMUU1OUQwNkREODUzNThDOTJCRiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QjA2OTQyRDkxRDIwNjgxMTgwODNFQ0ZERDU4Mzc2NUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Rjc3RjExNzQwNzIwNjgxMTlEQjNCRTg1QTlCRDRDRkMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7MV5soAAAAhUlEQVR42mL8//8/AxIwBuL3QHyPgRAAaYTi0P8Q8A6IjZHEsWImNHNAtgkC8RkgTiPWRgaoTe/+I0A5LhuxCYI0n0HSPJNYjSAsiKZ5N1SMoEaY5pm4nM1EINAFiQ0cipyKHrJEBU4oOdFR/h8VpOFLOSxoqQZGuwLxWXyhxkhuIgcIMAAnRKclzJXMugAAAABJRU5ErkJggg==');
@@ -772,7 +793,7 @@ header{
 
 .segment.expertise .row .column .button span i.icon-arrow.form:before{
   top: 11px;
-  right: -20px;
+  right: -18px;
 }
 
 
@@ -1028,4 +1049,20 @@ header{
   height: 75px;
 }
 
+
+.segment.expertise .row .column.online{
+  padding-right: 16px;
+}
+.segment.expertise .row .column.telephone{
+  padding-left: 16px;
+  padding-right: 36px;
+}
+.segment.expertise .row .column.agence{
+  padding-left: 16px;
+  border: none;
+}
+
+
+.segment.expertise .row .column .button span i.icon-arrow.form:before{
+  right: -14px;
 }
