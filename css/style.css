@@ -684,10 +684,11 @@ header{
   margin-top: 40px;
   border-right: 1px solid #999999;
   text-align: left;
+  padding: 0 36px;
 }
 
 
-.segment.expertise .row .column.online{
+/* .segment.expertise .row .column.online{
   padding-right: 36px;
 }
 .segment.expertise .row .column.telephone{
@@ -696,6 +697,10 @@ header{
 }
 .segment.expertise .row .column.agence{
   padding-left: 36px;
+  border: none;
+} */
+
+.segment.expertise .row .column.agence{
   border: none;
 }
 
@@ -772,8 +777,8 @@ header{
   top:2px;
 }
 
-.segment.expertise .row .column.agence .button{
-  width: 230px;
+.segment.expertise .row .column.agence .button, .segment.expertise .row .column.online .button{
+  width: 260px;
 }
 
 
@@ -796,6 +801,11 @@ header{
   right: -18px;
 }
 
+@-moz-document url-prefix() {
+  .segment.expertise .row .column .button span i.icon-arrow.form:before{
+     top: 25px;
+  }
+}
 
 .segment.expertise .row .column .button:hover{
   background: #bc1f1f;
@@ -1050,19 +1060,21 @@ header{
 }
 
 
-.segment.expertise .row .column.online{
-  padding-right: 16px;
-}
-.segment.expertise .row .column.telephone{
-  padding-left: 16px;
-  padding-right: 36px;
-}
-.segment.expertise .row .column.agence{
-  padding-left: 16px;
-  border: none;
+.segment.expertise .row .column{
+  padding: 0 16px;
 }
 
 
 .segment.expertise .row .column .button span i.icon-arrow.form:before{
   right: -14px;
+}
+
+#offre {
+  width: 573px;
+}
+
+.segment.expertise .row .column.online .button, .segment.expertise .row .column.agence .button{
+    width: 215px;
+}
+
 }
