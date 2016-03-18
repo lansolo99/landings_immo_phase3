@@ -63,29 +63,12 @@ body {
   padding-bottom: 3%;
 }
 
-.segment.exemple {
-  background: #ffffff;
-  padding: 6%;
-}
-
 .segment.bandeau{
-  padding: 4%;
-  padding-top: 5%;
-  padding-bottom: 0;
-  background: #76bde6; /* Old browsers */
-  background: -moz-linear-gradient(top,  #76bde6 0%, #73b7dd 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #76bde6 0%,#73b7dd 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #76bde6 0%,#73b7dd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76bde6', endColorstr='#73b7dd',GradientType=0 ); /* IE6-9 */
+  padding: 0;
 }
 
-.segment.simulateur {
-  background: #d8d8d8;
-  padding: 6%;
-}
-
-.segment.banniereBfm {
-  background: #efefef;
+.segment.offre{
+  background: #347992;
   padding: 6%;
   padding-top: 8%;
 }
@@ -93,7 +76,12 @@ body {
 .segment.contact {
   background: #ffffff;
   padding: 6%;
-  padding-bottom: 13vw;
+  padding-bottom: 10vw;
+}
+
+.segment.avantages {
+  background: #ccc;
+  padding-top: 0;
 }
 
 .segment.mentions_legales {
@@ -159,110 +147,201 @@ vertical-align: middle;
   font-size: 5.5vw;
 }
 
+
 /* Bandeau */
 
 #bandeau{
+  display: block;
   position: relative;
   width: 100%;
-
 }
 
-
-#informations {
+#main-image{
   position: relative;
-  z-index: 2;
+  display: block;
   width: 100%;
-}
-
-#informations h2 {
-  display: inline-block;
-  font-weight: 400px;
-  font-style: italic;
-  font-size: 5.3vw;
-}
-
-#dashes {
-  display: inline-block;
-  width: 4%;
   height: auto;
-  margin: 0 1.5% 0 1%;
-  vertical-align: baseline;
 }
 
-#dueDate{
+/* Offre */
+
+#offre{
   position: relative;
-  display: inline-block;
-  width: 57%;
-  padding: 2.5vw;
-  -moz-transform: skewX(-15deg);
-  -ms-transform: skewX(-15deg);
-  -webkit-transform: skewX(-15deg);
-  transform: skewX(-15deg);
-  text-transform: uppercase;
-  border: 1px solid #000000;
-  /* min-height: 1em; */
+}
+
+#offre h3{
+  display: block;
   text-align: center;
-}
-
-#dueDate span{
-  position: absolute;
-  left: 0;
-  top: 1vw;
-  width: 100%;
-  -moz-transform: skewX(15deg);
-  -ms-transform: skewX(15deg);
-  -webkit-transform: skewX(15deg);
-  transform: skewX(15deg);
-  font-size: 3vw;
-  font-weight: 400;
-  font-style: italic;
-}
-
-#informations h1{
-  display: block;
-  font-weight: 100;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
   font-size: 9vw;
-  color: #000000;
-  margin-top: 2vw;
+  font-weight: 400;
+  margin-bottom: 1.2vw;
 }
 
-#informations h1 span{
+#offre h3 sup{
+  position: relative;
+  top: -4vw;
+  font-size: 3vw;
+  position: relative;
+}
+
+#offre p.conditions{
+  text-align: center;
+  color: #c1edff;
+  font-size: 3.7vw;
+}
+
+
+#offre .titre{
+  position: absolute;
+  text-align: center;
+  top: -32vw;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 4vw 0;
+  background: #fff;
+}
+
+#offre .titre h1{
+  font-size: 11vw;
+  color: #e80f0f;
+  font-family: 'Roboto';
   font-weight: 400;
 }
 
-#informations h1 span sup{
-  font-size: 2vw;
-  line-height: 0;
-  position: relative;
+#offre .titre h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+  font-size: 6.5vw;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-#clock{
+#offre .titre h2 sup{
   position: relative;
+  top:-2.3vw;
+  font-size: 3vw;
+}
+
+
+/* Contact */
+
+#contact p, #contact h2{
+  color: #333333;
   display: block;
-  width: 100%;
-  /* bottom:-1vw; */
+  text-transform: uppercase;
+  line-height: 8vw;
+  margin-top: -0.5vw;
+  font-size: 5.5vw;
+  font-weight: 400;
+}
+
+
+#contact h2{
+  margin-top: 5vw;
+  color: #000;
+  font-weight: 500;
+}
+
+
+.btn.contact{
+  padding: 3vw 0;
+  margin-top: 3vw;
+  font-size: 5.5vw;
+  font-weight: 500;
+  padding-left: 17vw;
+  color: #000000;
+  border: 1px solid #b2b2b2;
+  border-bottom: 2px solid #b2b2b2;
+  border-radius: 3px;
+}
+
+.btn.contact:active{
+  background: #f4f4f4;
+}
+
+.btn.contact .label{
+  position: relative;
+  line-height: 6.5vw;
+}
+
+
+
+i.picto_tel:before, i.picto_agence:before{
+  content:'';
+  display: block;
+  position: absolute;
+  top: 5vw;
+  left: 4vw;
+  width: 9vw;
+  height: 9vw;
+  background-image: url('../images/picto_tel_mobile.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+i.picto_agence:before{
+  background-image: url('../images/picto_agence_mobile.svg');
+}
+
+i.arrow:before{
+  content:'';
+  display: inline-block;
+  position: absolute;
+  top: 6.5vw;
+  right: 3vw;
+  width: 6.5vw;
+  height: 6.5vw;
+  background-image: url('../images/picto_arrow_mobile.svg');
+  background-size: 100%;
+}
+
+
+
+
+/* Avantages */
+
+.avantage{
+  text-align: center;
+  background: #f6f5f4;
+  padding-bottom: 6vw;
+}
+
+
+.avantage img.avantages_arrow{
+  width: 4vw;
   height: auto;
 }
 
+.avantage:nth-child(2n+1){
+  background: #faf9f7;
 
-#taux {
-  position: absolute;
-  top:22vw;
-  right:0vw;
-
-  color: #ffffff;
-  font-size: 17vw;
-  font-weight: 900;
 }
 
-#taux span{
-  position: absolute;
-  bottom: -5vw;
-  right: 0px;
-  color: #000000;
-  font-weight: 700;
-  font-size: 6vw;
+
+.avantage h1{
+  margin-top: 2vw;
+  font-weight: 500;
+  font-size: 4.5vw;
+  line-height: 6.2vw;
+  color: #488ca6;
 }
+
+.avantage h1 sup{
+  font-size: 2.5vw;
+}
+
+#avantages .avantage p{
+  margin-top: 3vw;
+  font-size: 4vw;
+  line-height: 5.5vw;
+  color: #717171;
+}
+
+
+/* Mentions légales */
 
 #mention{
   position: absolute;
@@ -273,184 +352,6 @@ vertical-align: middle;
   font-weight: 300;
   line-height: 6vw;
 }
-
-
-/* Simulateur */
-
-
-#simulateur{
-}
-
-.btn{
-  position: relative;
-  display: block;
-  font-size: 4.5vw;
-  font-weight: 500;
-  padding: 5vw;
-  padding-left: 17vw;
-  border-radius: 3px;
-}
-
-
-
-.btn.simulation{
-  padding-top: 6vw;
-  padding-bottom: 5vw;
-  color: #ffffff;
-  background: #4d9ed0;
-  border-radius: 0.5vw;
-  border-bottom:3px solid #5a87a3;
-  box-shadow: none;
-}
-
-.btn.simulation:focus{
-  background: #3e8dbe;
-  transition: background 0.2;
-}
-
-i.arrow:before{
-  content:'';
-  display: inline-block;
-  position: absolute;
-  top: 5vw;
-  right: 6vw;
-  width: 6vw;
-  height: 6vw;
-  background-image: url('../images/button_arrow_mobile.png');
-  background-image: -webkit-image-set( url('../images/button_arrow_mobile-2x.png') 2x );
-  background-size: 100%;
-}
-
-i.picto_simulation:before{
-  content:'';
-  display: block;
-  position: absolute;
-  top: 3vw;
-  left: 4vw;
-  width: 8vw;
-  height: 8vw;
-  background-image: url('../images/picto_simulation_mobile.png');
-  background-image: -webkit-image-set( url('../images/picto_simulation_mobile-2x.png') 2x );
-  background-size: 100%;
-}
-
-
-
-
-
-
-/* Banniere BFM */
-
-#banniereBfm{
-  position: relative;
-  height: auto;
-  padding: 0;
-}
-
-#logoBfm{
-  display: inline-block;
-  position: relative;
-  top: 2vw;
-  vertical-align: top;
-  width: 15%;
-  height: auto;
-}
-
-#banniereBfm .label{
-  display: inline-block;
-  vertical-align: top;
-  line-height: 7vw;
-  margin-left: 3vw;
-  font-weight: 400;
-  font-size: 4.5vw;
-  color: #333333;
-  width: 80%;
-}
-
-#banniereBfm .label span{
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 3.4vw;
-  color: #007ac2;
-}
-
-
-/* Contact */
-
-#contact{
-}
-
-#contact p{
-  color: #333333;
-  display: block;
-  margin-top: 3.5vw;
-  font-size: 5.5vw;
-  font-weight: 400;
-}
-
-.separator{
-  width: 14vw;
-  height: 1.4vw;
-  background: #e35253;
-}
-
-.btn.contact{
-  padding-top: 4vw;
-  padding-bottom: 4vw;
-  margin-top: 5vw;
-  font-size: 5.5vw;
-  font-weight: 400;
-  padding-left: 17vw;
-  color: #333333;
-  border: 1px solid #666666;
-  border-bottom: 2px solid #666666;
-  border-radius: 3px;
-}
-
-.btn.contact .label{
-  position: relative;
-  line-height: 6.5vw;
-}
-
-.btn.contact .label span.expresso{
-  color: #588bd5;
-}
-
-.btn.contact .label span.method{
-  font-weight: 500;
-}
-
-
-i.picto_tel:before{
-  content:'';
-  display: block;
-  position: absolute;
-  top: 5vw;
-  left: 4vw;
-  width: 8.5vw;
-  height: 8.5vw;
-  background-image: url('https://static.societegenerale.fr/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/02-promo/2015/12/c739/c739-credit-conso-expresso/images/picto_tel.png');
-  background-image: -webkit-image-set( url('https://static.societegenerale.fr/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/02-promo/2015/12/c739/c739-credit-conso-expresso/images/picto_tel.png') 1x, url('https://static.societegenerale.fr/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/02-promo/2015/12/c739/c739-credit-conso-expresso/images/picto_tel-2x.png') 2x );
-  background-size: 100%;
-}
-
-i.picto_agence:before{
-  content:'';
-  display: block;
-  position: absolute;
-  top: 5vw;
-  left: 4vw;
-  width: 8.5vw;
-  height: 8.5vw;
-  background-image: url('https://static.societegenerale.fr/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/02-promo/2015/12/c739/c739-credit-conso-expresso/images/picto_agence.png');
-  background-image: -webkit-image-set( url('https://static.societegenerale.fr/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/02-promo/2015/12/c739/c739-credit-conso-expresso/images/picto_agence.png') 1x, url('https://static.societegenerale.fr/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/02-promo/2015/12/c739/c739-credit-conso-expresso/images/picto_agence-2x.png') 2x );
-  background-size: 100%;
-}
-
-
-
-/* Mentions légales */
-
 
 #mentions_legales {
 	font-size: 4vw;
@@ -476,8 +377,7 @@ i.picto_agence:before{
   padding: 0 0 5vw 0;
   padding-left: 9vw;
   line-height: 5vw;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
 
 #mentions_legales .mentions dt:last-child {
