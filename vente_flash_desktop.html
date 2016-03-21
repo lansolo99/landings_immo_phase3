@@ -125,28 +125,7 @@
 	</script>
 	<script src="https://static.societegenerale.fr/pri/PRI/Repertoire_par_type_de_contenus/Type_de_contenu/01-Pages/02-promo/2015/12/c739/c739-credit-conso-expresso/js/modernizr.js"></script>
 	<script src="https://static.societegenerale.fr/pri/contenu/js/jquery-1-4-2-min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	if($.browser.msie){
-   $('input[placeholder]').each(function(){
 
-        var input = $(this);
-
-        $(input).val(input.attr('placeholder'));
-
-        $(input).focus(function(){
-             if (input.val() == input.attr('placeholder')) {
-                 input.val('');
-             }
-        });
-
-        $(input).blur(function(){
-            if (input.val() == '' || input.val() == input.attr('placeholder')) {
-                input.val(input.attr('placeholder'));
-            }
-        });
-    });
-};
-	</script>
 
 
 
@@ -347,7 +326,28 @@
 
 
 
+<script type="text/javascript">
+if($.browser.msie){
+ $('input[placeholder]').each(function(){
 
+			var input = $(this);
+
+			$(input).val(input.attr('placeholder'));
+
+			$(input).focus(function(){
+					 if (input.val() == input.attr('placeholder')) {
+							 input.val('');
+					 }
+			});
+
+			$(input).blur(function(){
+					if (input.val() == '' || input.val() == input.attr('placeholder')) {
+							input.val(input.attr('placeholder'));
+					}
+			});
+	});
+};
+</script>
 
 </body>
 </html>
