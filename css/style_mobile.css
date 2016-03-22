@@ -394,6 +394,9 @@ i.arrow:before{
   font-size: 4vw;
 }
 
+#mentions_legales .mentions dt span{
+white-space: nowrap;
+}
 
 .ui-icon.iconOpen {
   display: block;
